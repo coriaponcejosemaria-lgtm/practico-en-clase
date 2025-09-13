@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo en Bolivia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- ======== ENCABEZADO ======== -->
+  <header class="bg-red-900 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-3">
+        <div class="logo-container">
+          <img src="imagenes/pngtree-bolivia-flag-png-image_6433385.png" alt="Logo Institución" class="w-12 h-12">
+        </div>
+        <h1 class="text-xl md:text-2xl font-bold leading-tight">
+          TURISMO EN BOLIVIA
+        </h1>
+      </div>
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="#inicio" class="hover:text-yellow-300 transition">Inicio</a>
+        <a href="#destinos" class="hover:text-yellow-300 transition">Destinos</a>
+        <a href="#cultura" class="hover:text-yellow-300 transition">Cultura</a>
+        <a href="#galeria" class="hover:text-yellow-300 transition">Galería</a>
+        <a href="#contacto" class="hover:text-yellow-300 transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== HERO CON PARTICULAS ======== -->
+  <section id="inicio" class="relative h-[90vh] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('imagenes/hero.jpg');"></div>
+    <canvas id="particlesCanvas" class="absolute inset-0 z-20"></canvas>
+    <div class="absolute inset-0 z-25" style="background: linear-gradient(to bottom, rgba(250,250,250,0.0), rgba(250,250,250,0.35));"></div>
+    <div class="absolute inset-0 bg-black/20 z-30"></div>
+
+    <div class="relative z-40 flex flex-col justify-center items-center text-center text-white px-6 h-full">
+      <h2 class="text-4xl md:text-6xl font-bold animate__animated animate__fadeInDown">
+        Descubre Bolivia
+      </h2>
+      <p class="mt-4 text-lg md:text-2xl max-w-2xl animate__animated animate__fadeInUp">
+        Explora paisajes impresionantes, cultura vibrante y tradiciones únicas.
+      </p>
+      <a href="#destinos" class="mt-8 px-8 py-3 bg-yellow-400 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-500 transition transform hover:scale-105 animate__animated animate__fadeInUp">
+        Ver Destinos
+      </a>
+    </div>
+  </section>
+
+  <!-- ======== DESTINOS POPULARES ======== -->
+  <section id="destinos" class="py-20 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl md:text-4xl font-bold mb-10 text-red-900 text-center">Destinos Populares</h3>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+        <img src="imagenes/uyuni.PNG" alt="Salar de Uyuni" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-xl mb-2">Salar de Uyuni</h4>
+          <p class="text-gray-600">El desierto de sal más grande del mundo, un paisaje único y surrealista.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+        <img src="imagenes/lagotiticaca.PNG" alt="Lago Titicaca" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-xl mb-2">Lago Titicaca</h4>
+          <p class="text-gray-600">El lago navegable más alto del mundo, hogar de islas y comunidades tradicionales.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+        <img src="imagenes/valledelaluna.PNG" alt="Valle de la Luna" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-xl mb-2">Valle de la Luna</h4>
+          <p class="text-gray-600">Formaciones rocosas únicas cerca de La Paz, un paisaje lunar impresionante.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition transform">
+        <img src="imagenes/sucre.PNG" alt="Sucre" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-xl mb-2">Sucre</h4>
+          <p class="text-gray-600">Capital histórica de Bolivia, con arquitectura colonial y calles empedradas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CULTURA ======== -->
+  <section id="cultura" class="py-20 bg-gray-100">
+    <h3 class="text-3xl md:text-4xl font-bold mb-10 text-red-900 text-center">Cultura y Tradiciones</h3>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition transform">
+        <img src="imagenes/carnavaldeoruro.PNG" alt="Carnaval de Oruro" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h4 class="font-semibold text-xl mb-2">Carnaval de Oruro</h4>
+        <p class="text-gray-600">Una de las festividades más grandes y coloridas de América, patrimonio de la humanidad.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition transform">
+        <img src="imagenes/morenada.PNG" alt="Morenada" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h4 class="font-semibold text-xl mb-2">Danza Morenada</h4>
+        <p class="text-gray-600">Expresión cultural con trajes coloridos y ritmos tradicionales que narran historia.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition transform">
+        <img src="imagenes/gastronomiaboliviana.PNG" alt="Gastronomía Boliviana" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h4 class="font-semibold text-xl mb-2">Gastronomía</h4>
+        <p class="text-gray-600">Sabores auténticos: salteñas, api con pastel, pique macho y mucho más.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== GALERÍA ======== -->
+  <section id="galeria" class="py-20 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl md:text-4xl font-bold mb-10 text-red-900 text-center">Galería de Fotos</h3>
+    <div class="grid md:grid-cols-4 gap-4">
+      <img src="imagenes/gañeria1.PNG" alt="Galería 1" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition transform">
+      <img src="imagenes/galeria2.PNG" alt="Galería 2" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition transform">
+      <img src="imagenes/galeria3.PNG" alt="Galería 3" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition transform">
+      <img src="imagenes/galeria4.PNG" alt="Galería 4" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition transform">
+    </div>
+  </section>
+
+  <!-- ======== CONTACTO ======== -->
+  <section id="contacto" class="py-16 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10 text-red-900">Contacto</h3>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="mb-4"><strong>Email:</strong> turismo@bolivia.com</p>
+        <p class="mb-4"><strong>Teléfono:</strong> +591 72119850</p>
+        <p class="mb-4"><strong>Dirección:</strong> La Paz, Bolivia</p>
+        <p>También puedes seguirnos en nuestras redes sociales para más información.</p>
+      </div>
+      <form class="bg-white shadow-lg rounded-xl p-6 space-y-4">
+        <input type="text" placeholder="Nombre" class="w-full border p-3 rounded-lg">
+        <input type="email" placeholder="Correo" class="w-full border p-3 rounded-lg">
+        <textarea placeholder="Mensaje" class="w-full border p-3 rounded-lg h-32"></textarea>
+        <button class="w-full bg-red-900 text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-red-900 text-white text-center py-6">
+    <p>&copy; 2025 Turismo en Bolivia - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- JavaScript de partículas -->
+  <script src="scrip.js"></script>
+</body>
+</html>
